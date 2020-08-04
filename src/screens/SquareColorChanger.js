@@ -3,6 +3,9 @@ import { View, Text, StyleSheet } from 'react-native';
 import ColorChanger from '../components/ColorChanger';
 
 const SquareColorChanger = () => {
+
+    
+
     return (
         <View>
             <ColorChanger color='Red' />
