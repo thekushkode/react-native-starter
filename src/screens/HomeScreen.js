@@ -30,6 +30,10 @@ const HomeScreen = ({navigation}) => { //navigation is a destructured props -> p
         title='Go to Color Changing Demo'
         onPress={() => navigation.navigate('ColorChange')}
       />
+      <Button
+        title='Go to Text Demo'
+        onPress={() => navigation.navigate('Text')}
+      />
       {/* <TouchableOpacity onPress={() => props.navigation.navigate('List')}>
         <Text>Go to List Demo</Text>
       </TouchableOpacity> */}
