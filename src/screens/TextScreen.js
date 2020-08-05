@@ -17,7 +17,7 @@ const TextScreen = () => {
                 value={name}
                 onChangeText={(nameValue) => setName(nameValue)}
             />
-            <Text>Enter Your Password:</Text>
+            <Text style={styles.text}>Enter Your Password:</Text>
             <TextInput
                 style={styles.border}
                 autoCapitalize='none'
@@ -25,7 +25,7 @@ const TextScreen = () => {
                 value={password}
                 onChangeText={(passValue) => setPassword(passValue)}
             />
-            {password.length >= 4 ? null : <Text>Your password must be at leat 4 charachters.</Text>}
+            {password.length >= 4 ? null : <Text style={{ textAlign: 'center', color: 'red' }}>Your password must be at leat 4 charachters.</Text>}
             <Text style={styles.text}>Your password is: {password}</Text>
         </View>
     )
